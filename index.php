@@ -1,39 +1,12 @@
 <?php
 
-	ini_set("display_errors", "1");
-	error_reporting(E_ALL);
+	echo "Hello, you are commiting new stuff";
 
-	if (isset($_GET["p"]) ) { //<--Si existe(isset) el parametro p en la url...
-		
-		$archivo = $_GET["p"] . ".php"; //<--Asi no muestra la extencion de los archivos en la URL
-	
-	} else { //<--Si NO existe...
-	
-		$archivo = "inicio.php";
-	
-	}
-
-	include "header.php";
 ?>
-
-<div class="container">
-
-	<section id="page">
-	
-		<?php
-
-		if ( file_exists( $archivo ) ) {
-			
-			include $archivo;
-
-		} else {
-
-			echo "ERROR 404 - Page not found";
-		}
-
-		?>
-	
-	</section>
-
-</div>
-<?php include "footer.php" ?>
+<h1>Hola</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
